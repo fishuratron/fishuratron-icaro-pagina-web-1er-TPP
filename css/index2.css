@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    padding: 10px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    grid-area: header;
+    background-color: #394d37;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::first-letter{
+ font-size: 130%;
+  font-weight: bold;
+}
+nav {
+    grid-area: nav;
+    background-color: #394d37;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+main {
+    grid-area: main;
+    background-color: #383636;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-texto {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.info-card {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+.parr {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.card {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+footer {
+    grid-area: footer;
+    background-color: #394d37;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3e8052;
+    text-shadow: 0 0 8px #12291c, 0 0 15px #233b1d;
+    transform: scale(1.1);
+    background-color: rgba(109, 150, 103, 0.089);
+    border-radius: 15px;
+}
+
+body {
+    background-color: rgb(34, 32, 32);
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+}
+
+::selection {
+  background-color: #3d573d;
+}
+
+@media (max-width: 850px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-card {
+        width: 100%;
+        max-width: 300px;
+        order: 2;
+    }
+    .info-texto {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
