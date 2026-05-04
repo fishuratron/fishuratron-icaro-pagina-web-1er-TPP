@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 
-.container {
+ .container {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     padding: 10px;
     grid-template-areas:
         "header header header"
@@ -15,7 +15,7 @@
         "main main main"
         "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto;
 }
 
 header {
@@ -51,7 +51,6 @@ main {
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
-    overflow-y: auto;
 }
 
 .main-content {
@@ -78,7 +77,12 @@ main {
 
 .parr {
     font-size: 1.1rem;
-    line-height: 1.5;
+   line-height: 1.6;   
+    text-align: left;    
+    margin-bottom: 25px;
+    max-width: 850px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
