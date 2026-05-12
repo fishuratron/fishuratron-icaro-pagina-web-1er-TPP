@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(34, 32, 32);
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+}
+
  .container {
     display: grid;
     min-height: 100vh;
@@ -22,7 +28,6 @@ header {
     grid-area: header;
     background-color: #394d37;
     padding: 20px;
-    border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +46,26 @@ nav {
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3e8052;
+    text-shadow: 0 0 8px #12291c, 0 0 15px #233b1d;
+    transform: scale(1.1);
+    background-color: rgba(109, 150, 103, 0.089);
+    border-radius: 15px;
+}
+
+nav a.activo{
+    border-bottom: 3px solid #00ff00;
+    padding-bottom: 5px; 
 }
 
 main {
@@ -93,11 +118,10 @@ footer {
     grid-area: footer;
     background-color: #394d37;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: white;
     font-family: sans-serif;
     gap: 20px;
 }
@@ -118,13 +142,6 @@ footer p {
     display: flex;
     flex-direction: column; 
     gap: 10px;
-}
-
-.footer-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: bold;
 }
 
 .footer-right {
@@ -153,7 +170,6 @@ footer p {
 
 .fuentes a {
     color: white;
-    text-decoration: none;
     font-size: 0.75rem;
     opacity: 0.8;
 }
@@ -161,27 +177,6 @@ footer p {
 .fuentes a:hover {
     opacity: 1;
     text-decoration: underline;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #3e8052;
-    text-shadow: 0 0 8px #12291c, 0 0 15px #233b1d;
-    transform: scale(1.1);
-    background-color: rgba(109, 150, 103, 0.089);
-    border-radius: 15px;
-}
-
-body {
-    background-color: rgb(34, 32, 32);
-    font-family: "Nunito Sans", sans-serif;
-    color: white;
 }
 
 ::selection {
@@ -202,8 +197,4 @@ body {
         order: 1;
         margin-bottom: 20px;
     }
-}
-nav a.activo{
-    border-bottom: 3px solid #00ff00;
-    padding-bottom: 5px; 
 }
