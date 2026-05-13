@@ -32,6 +32,17 @@ header {
     align-items: center;
 }
 
+.header-contenido {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icono {
+    width: 50px;
+    filter: invert(1);
+}
+
 h1::first-letter{
  font-size: 130%;
   font-weight: bold;
