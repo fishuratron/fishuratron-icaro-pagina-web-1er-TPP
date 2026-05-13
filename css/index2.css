@@ -349,3 +349,148 @@ footer p {
     background-color: #00ff00;
     color: black;
 }
+
+/*contactos.html*/
+
+.principal-ctos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: rgb(34, 32, 32);
+}
+
+.titulo-evaluacion {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cuadricula-trivia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 60px;
+}
+
+.tarjeta-trivia {
+    background: #2a2828;
+    border: 1px solid #4a5c48;
+    padding: 25px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.tarjeta-trivia h5 {
+    color: #00ff00;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.grupo-opciones label {
+    display: block;
+    background: #1a1a1a;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    color: white;
+}
+
+.grupo-opciones label:hover {
+    border-color: #394d37;
+    background: #222;
+}
+
+.grupo-opciones input[type="radio"] {
+    display: none;
+}
+
+.msj-c, .msj-i {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.caja-central {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #4a5c48;
+    padding: 30px;
+    background: #2a2828;
+}
+
+.envoltura-cto {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 80px;
+}
+
+.contenedor-f-cto {
+    background: #2a2828;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid #00ff00;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.grupo-entrada {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.grupo-entrada label {
+    display: block;
+    color: #accfa9;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.grupo-entrada input, 
+.grupo-entrada textarea {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #4a5c48;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.grupo-entrada input:focus, 
+.grupo-entrada textarea:focus {
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.btn-envio {
+    background: #00ff00;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-envio:hover {
+    background: #accfa9;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 850px) {
+    .cuadricula-trivia { grid-template-columns: 1fr; }
+}
