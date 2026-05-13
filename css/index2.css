@@ -206,9 +206,42 @@ footer p {
     padding-bottom: 10px;
 }
 
+.productos {
+    background-color: #2a2828;
+    border: 1px solid #4a5c48;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     width: 100%;
+}
+
+.productos-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #1a1a1a;
+}
+
+.productos-titulo {
+    font-size: 1.2rem;
+    color: #accfa9;
+    margin-bottom: 10px;
+}
+
+.productos-desc {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+    flex-grow: 1;
 }
