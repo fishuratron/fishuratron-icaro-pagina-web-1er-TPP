@@ -198,3 +198,17 @@ footer p {
         margin-bottom: 20px;
     }
 }
+/*Contenido.html*/
+.tienda-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
