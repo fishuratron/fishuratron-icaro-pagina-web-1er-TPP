@@ -14,7 +14,6 @@ body {
  .container {
     display: grid;
     min-height: 100vh;
-    padding: 10px;
     grid-template-areas:
         "header header header"
         "nav nav nav"
@@ -204,6 +203,7 @@ footer p {
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    border-bottom: 2px solid #4a5c48;
 }
 
 .productos-grid {
@@ -256,7 +256,6 @@ footer p {
 .productos-precio {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #00ff00;
     margin-bottom: 15px;
 }
 
